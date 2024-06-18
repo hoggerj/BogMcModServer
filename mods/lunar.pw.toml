@@ -1,0 +1,13 @@
+name = "Lunar"
+filename = "Lunar-forge-1.20.1-0.1.10.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/PwhlJMsW/versions/qJOqDZ8G/Lunar-forge-1.20.1-0.1.10.jar"
+hash-format = "sha1"
+hash = "feee6a8c5acd763ac90082e0253bde7080fb1b2e"
+
+[update]
+[update.modrinth]
+mod-id = "PwhlJMsW"
+version = "qJOqDZ8G"
