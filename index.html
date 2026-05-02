@@ -58,4 +58,46 @@
     </a>
   </div>
 </body>
+
+<details class="modbox">
+  <summary>📦 View Mods</summary>
+  <ul id="modList"></ul>
+</details>
+
+<script>
+fetch('index.toml')
+  .then(res => res.text())
+  .then(text => {
+    const mods = [];
+
+    const lines = text.split("\n");
+
+    for (const line of lines) {
+      if (line.includes('file =')) {
+
+        const match = line.match(/file\s*=\s*"([^"]+)"/);
+        if (!match) continue;
+
+        let path = match[1];
+
+        // remove "mods/"
+        path = path.replace("mods/", "");
+
+        // remove ".pw.toml"
+        path = path.replace(".pw.toml", "");
+
+        mods.push(path);
+      }
+    }
+
+    const list = document.getElementById("modList");
+
+    mods.forEach(mod => {
+      const li = document.createElement("li");
+      li.textContent = mod;
+      list.appendChild(li);
+    });
+  });
+</script>
+
 </html>
