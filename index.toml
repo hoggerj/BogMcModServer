@@ -191,16 +191,6 @@ hash = "1d37ac39109aa15d03a3a7ddf6402d63f72277acafca53f61830046acfe6edb0"
 metafile = true
 
 [[files]]
-file = "mods/simply-tooltips.pw.toml"
-hash = "320d755339086e8fb35709328ad7b094ecbf7c500d61c08c535ec7d277fe1053"
-metafile = true
-
-[[files]]
-file = "mods/simplymore.pw.toml"
-hash = "506c202c1c995885831d1f75504157fe3550b924bd23a1aede16fd1e6fbc9fd7"
-metafile = true
-
-[[files]]
 file = "mods/sodium.pw.toml"
 hash = "0281ed9713f3141bdac363056a791845510e14761ea65b4b2813cf96d664b20a"
 metafile = true
