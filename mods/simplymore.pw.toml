@@ -1,6 +1,6 @@
 name = "Simply More"
 filename = "simplymore-neoforge-1.2.2+1.21.1.jar"
-side = "both"
+side = "client"
 
 [download]
 url = "https://cdn.modrinth.com/data/zhpyD8Y0/versions/naW264bf/simplymore-neoforge-1.2.2%2B1.21.1.jar"
