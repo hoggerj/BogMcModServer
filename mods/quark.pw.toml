@@ -1,13 +1,13 @@
 name = "Quark"
-filename = "Quark-4.0-458.jar"
+filename = "Quark-4.1-477.jar"
 side = "both"
 
 [download]
-url = "https://cdn.modrinth.com/data/qnQsVE2z/versions/J3etK5WK/Quark-4.0-458.jar"
-hash-format = "sha1"
-hash = "cb38b4735b709f16ba6440162a4b331623b63597"
+url = "https://cdn.modrinth.com/data/qnQsVE2z/versions/qcDWHGnS/Quark-4.1-477.jar"
+hash-format = "sha512"
+hash = "ded71aa7f564290d3e115c1e9670c9ffe0870dc5b03b20d72323046d8f026337248281ab4845a6d0a2f78cd6a3666fb28fadac7b214dac3fcbd0b824f73c1f01"
 
 [update]
 [update.modrinth]
 mod-id = "qnQsVE2z"
-version = "J3etK5WK"
+version = "qcDWHGnS"
