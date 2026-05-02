@@ -11,13 +11,14 @@
       color: #e0e0e0;
       display: flex;
       justify-content: center;
-      align-items: center;
-      height: 100vh;
+      min-height: 100vh;
       text-align: center;
+      padding: 40px 0;
     }
 
     .container {
       max-width: 500px;
+      width: 100%;
       padding: 20px;
     }
 
@@ -45,8 +46,16 @@
       background-color: #505050;
       border-color: #777;
     }
+
+    .modbox ul {
+      margin-top: 20px;
+      max-height: 300px;
+      overflow-y: auto;
+      text-align: left;
+    }
   </style>
 </head>
+
 
 <body>
   <div class="container">
@@ -56,47 +65,45 @@
     <a class="button" href="BigHogModsV2.mrpack" download>
       Download Modpack
     </a>
+    <details class="modbox">
+      <summary>📦 View Mods</summary>
+      <ul id="modList"></ul>
+    </details>
   </div>
 </body>
 
-<details class="modbox">
-  <summary>📦 View Mods</summary>
-  <ul id="modList"></ul>
-</details>
 
 <script>
 fetch('index.toml')
   .then(res => res.text())
   .then(text => {
-    const mods = [];
+    const mods = new Set();
 
-    const lines = text.split("\n");
+    // matches file = "mods/whatever.pw.toml"
+    const regex = /file\s*=\s*"([^"]+\.pw\.toml)"/g;
 
-    for (const line of lines) {
-      if (line.includes('file =')) {
+    let match;
+    while ((match = regex.exec(text)) !== null) {
+      let path = match[1]
+        .replace("mods/", "")
+        .replace(".pw.toml", "");
 
-        const match = line.match(/file\s*=\s*"([^"]+)"/);
-        if (!match) continue;
-
-        let path = match[1];
-
-        // remove "mods/"
-        path = path.replace("mods/", "");
-
-        // remove ".pw.toml"
-        path = path.replace(".pw.toml", "");
-
-        mods.push(path);
-      }
+      mods.add(path);
     }
 
     const list = document.getElementById("modList");
+    list.innerHTML = "";
 
-    mods.forEach(mod => {
-      const li = document.createElement("li");
-      li.textContent = mod;
-      list.appendChild(li);
-    });
+    [...mods]
+      .sort((a, b) => a.localeCompare(b))
+      .forEach(mod => {
+        const li = document.createElement("li");
+        li.textContent = mod;
+        list.appendChild(li);
+      });
+  })
+  .catch(err => {
+    console.error("Failed to load mod list:", err);
   });
 </script>
 
