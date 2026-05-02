@@ -1,13 +1,13 @@
-name = "Big Mods"
-author = "hogger"
+name = "BigHogModsV2"
+author = "hogger97"
 version = "1.0.0"
 pack-format = "packwiz:1.1.0"
 
 [index]
 file = "index.toml"
 hash-format = "sha256"
-hash = "f682bcaa06f46af46c252efd3557c16447587f889a7c228d977dd6b35747be13"
+hash = "d470bf2ec59c1e25009daebc1e38b8e9361bd1a2cddba311c2915f398116dd7d"
 
 [versions]
-forge = "47.3.0"
-minecraft = "1.20.1"
+minecraft = "1.21.1"
+neoforge = "21.1.228"
