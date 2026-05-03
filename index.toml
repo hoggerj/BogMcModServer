@@ -76,6 +76,11 @@ hash = "133e7c9295b9e7e8577b5ca36cf9548b4c590eeb0708fdeb9cb59c2758759ac8"
 metafile = true
 
 [[files]]
+file = "mods/dynmap.pw.toml"
+hash = "27384777fbc6148353ea2542fc9922659bc7bb57e3c9f5290282c5885a534654"
+metafile = true
+
+[[files]]
 file = "mods/elytra-trims.pw.toml"
 hash = "7b3c7609e07faade9f1c2f5bcf9c655215d38c2ae32d68fc2de7b5b1459fda4c"
 metafile = true
@@ -103,6 +108,15 @@ metafile = true
 [[files]]
 file = "mods/gravestone-mod.pw.toml"
 hash = "2ac1df7fad83d36e69b4aaad32f0b952c9b039d7345592bb66934f40a8606224"
+metafile = true
+
+[[files]]
+file = "mods/index.toml"
+hash = "22df7e745c13b2672ae5054a7f0fd5eeef7cf5b1dab077fd4198f30dd2a8711a"
+
+[[files]]
+file = "mods/jade.pw.toml"
+hash = "b6e0a61fea06f8d6d8e1672cf07b682625c4b74efd548d5093cd9c1fed167eec"
 metafile = true
 
 [[files]]
@@ -159,6 +173,10 @@ metafile = true
 file = "mods/owo-lib.pw.toml"
 hash = "46831c04077a06df823bcd0f254833a90a9a9ccc78f5069f4b4c27fa301ac0cf"
 metafile = true
+
+[[files]]
+file = "mods/pack.toml"
+hash = "2de30fc1053035b3bb6e723f0f7d9d00331afd388a5020abd51117828e98db4b"
 
 [[files]]
 file = "mods/particle-rain.pw.toml"
