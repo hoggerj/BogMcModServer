@@ -31,6 +31,11 @@ hash = "5486f656b149dd16ebd97ea62f3410372ad6883604f51e88d14f22c5263a8280"
 metafile = true
 
 [[files]]
+file = "mods/bluemap.pw.toml"
+hash = "f33a4720ef4f315b6d1f778039e9f7bdb8f5ef1b58a57d565c30fd1d8adee207"
+metafile = true
+
+[[files]]
 file = "mods/cb-compressed-blocks.pw.toml"
 hash = "0e401c580a706a6178b6cc968e48c6e858334f35004ddf8ed35f03bb6b1e3ab1"
 metafile = true
@@ -73,11 +78,6 @@ metafile = true
 [[files]]
 file = "mods/distanthorizons.pw.toml"
 hash = "133e7c9295b9e7e8577b5ca36cf9548b4c590eeb0708fdeb9cb59c2758759ac8"
-metafile = true
-
-[[files]]
-file = "mods/dynmap.pw.toml"
-hash = "27384777fbc6148353ea2542fc9922659bc7bb57e3c9f5290282c5885a534654"
 metafile = true
 
 [[files]]
