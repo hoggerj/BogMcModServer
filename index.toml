@@ -181,11 +181,6 @@ hash = "fe534103fe33ec364646a17fd9a597fa7a6003d4a4426a4305477770ce32192f"
 metafile = true
 
 [[files]]
-file = "mods/immersive-structures.pw.toml"
-hash = "80f5546b36afd19520d265801649ec4fb6146ecc9752cb092e4cfbf3beeecca9"
-metafile = true
-
-[[files]]
 file = "mods/index.toml"
 hash = "22df7e745c13b2672ae5054a7f0fd5eeef7cf5b1dab077fd4198f30dd2a8711a"
 
